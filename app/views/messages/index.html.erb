@@ -1,11 +1,11 @@
 <!--<h1>Messages#index</h1>-->
 <!--<p>Find me in app/views/messages/index.html.erb</p>-->
 <div class="panel panel-default">
-  <div class="panel-heading">
+  <div class="panel-heading panel1">
     メッセージ一覧
   </div>
     
-  <div class="panel-body">
+  <div class="panel-body panel1">
     <% @messages.each do |message| %>
       <span class="label label-info"><%= message.name %></span>
       <%= message.body %>
@@ -16,9 +16,12 @@
 
 <%= form_for(@message) do |f| %>
   名前:
-  <%= f.text_field :name %>
-
-  内容:
-  <%= f.text_field :body %>
-  <%= f.submit class: "btn btn-sm btn-primary" %>
+  <%= f.text_field :name, class: "form1"  %>
+  <br>
+  <span class="form_title">内容:
+  <%= f.text_area :body, class: "form-horizon form2", size: "22x5" %>
+  </span>
+  <br>
+  <%= f.submit class: "btn btn-lg btn-primary btn1"  %>
+  
 <% end %>
