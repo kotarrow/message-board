@@ -1,0 +1,22 @@
+*{
+    font-size: 18pt;
+    /*background-color: #071A2B;*/
+}
+/*body{*/
+/*    font-size: 18pt;*/
+/*    background-color: #071A2B;*/
+/*}*/
+.navbar .container .navbar-header .pagetitle{
+    font-size:32pt;
+    background-color: white;
+}
+
+.container .form_title{
+    vertical-align: middle;
+}
+.container .form2{
+    margin: 20px 0 0 0;
+}
+.container .btn1{
+    margin: 20px 0 0 60px;
+}
