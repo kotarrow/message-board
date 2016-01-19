@@ -15,11 +15,9 @@
 <%= form_for(@message) do |f| %>
   名前:
   <%= f.text_field :name, class: "form1"  %>
-  
   <span class="form_title">内容:
   <%= f.text_area :body, class: "form-horizon form2", size: "22x5" %>
   </span>
-  
   <%= f.submit class: "btn btn-lg btn-primary btn1"  %>
   
 <% end %>
